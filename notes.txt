@@ -1,0 +1,3 @@
+Proje arrayin içiersindeki elemanları karıştırmaktır tek amacı
+
+Fakat bir find işlemi ile gelen yüzdelik hangi parametrenin kaçıncı aralığa gelmesi gerektiğini hesaplar ve return eder.
