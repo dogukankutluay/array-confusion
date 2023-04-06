@@ -5,10 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "nodemon test.js"
+    "build": "flow-remove-types src/ -d lib/",
+    "prepublish": "{{include.package_manager}} run build",
+    "flow": "flow"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "jest": "^29.4.3"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.200.1",
+    "flow-remove-types": "^2.200.1"
+  }
 }
